@@ -1,5 +1,7 @@
+" Theme
+packadd! dracula
+colorscheme dracula
 syntax enable
-
 set updatetime=300
 set number
 set mouse=a
@@ -23,16 +25,12 @@ call plug#begin('C:\Users\la413\AppData\Local\nvim\plugged')
 Plug 'sheerun/vim-polyglot'
 
 " status bar
-"Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
-
-" Themes
-"Plug 'dracula/vim', { 'as': 'dracula' }
 
 " Git
 Plug 'tpope/vim-fugitive'
 
-" Tree
+" tree
 Plug 'scrooloose/nerdtree'
 
 " tmux
@@ -43,7 +41,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
-" Autocomplete
+" autocomplete
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -99,3 +97,4 @@ nmap <Leader>t :NERDTreeToggle<CR>
 " "[Left], [Right], [Up], or [Down]" + <TAB> = ✔ Auto complete
 inoremap <silent><expr> <tab> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<TAB>"
 inoremap <silent><expr> <cr> "\<c-g>u\<CR>"
+
